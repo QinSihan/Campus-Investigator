@@ -1,0 +1,24 @@
+info
+A
+find_path
+H A
+info
+B
+find_path
+K B
+info
+E
+find_path
+I E
+info
+H
+find_path
+G H
+info
+I
+find_path
+J I
+info
+K
+find_path
+A K

@@ -1,0 +1,24 @@
+Log: searching for info of A...
+沾湿昏暗草堂
+Log: searching for path from H to A
+Path from H to A: H E D C B A 
+Log: searching for info of B...
+猪糠禽肴食槽
+Log: searching for path from K to B
+Path from K to B: K I G F E D C B 
+Log: searching for info of E...
+深夜跑堂
+Log: searching for path from I to E
+Path from I to E: I G F E 
+Log: searching for info of H...
+家
+Log: searching for path from G to H
+Path from G to H: G F H 
+Log: searching for info of I...
+枢密院
+Log: searching for path from J to I
+Path from J to I: J H I 
+Log: searching for info of K...
+昏睡牢房
+Log: searching for path from A to K
+Path from A to K: A B C D E F G I K 
