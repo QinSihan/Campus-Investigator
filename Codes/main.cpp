@@ -17,7 +17,7 @@ struct Info{
 };
 
 void print_place_info(string start, Info* H){
-    ofstream outfile("C:/Users/20148/Desktop/Investigator/Tests/result.txt", ios::app);
+    ofstream outfile("Tests/result.txt", ios::app);
     // check
     if (!outfile.is_open()) {
         cerr << "Failed to open file \"result.txt\"" << endl;
@@ -75,7 +75,7 @@ void printpath(string start, string end, vector<vector<int>>& next){
     stack<int> path;
     int current = start_index;
 
-    ofstream outfile("C:/Users/20148/Desktop/Investigator/Tests/result.txt", ios::app);
+    ofstream outfile("Tests/result.txt", ios::app);
     outfile << "Log: searching for path from " << start << " to " << end << endl;
 
     // fail
@@ -122,7 +122,7 @@ void printpath(string start, string end, vector<vector<int>>& next){
 
 int main() {
     // 读取邻接矩阵
-    ifstream mapFile("C:/Users/20148/Desktop/Investigator/Tests/basic_map.txt");
+    ifstream mapFile("Tests/basic_map.txt");
     if (!mapFile.is_open()) {
         cerr << "Failed to open file \"basic_map.txt\"" << endl;
         return 1;
@@ -146,7 +146,7 @@ int main() {
     mapFile.close();
 
     // 读取地点信息
-    ifstream infoFile("C:/Users/20148/Desktop/Investigator/Tests/information.txt");
+    ifstream infoFile("Tests/information.txt");
     if (!infoFile.is_open()) {
         cerr << "Failed to open file \"information.txt\"" << endl;
         return 1;
@@ -168,7 +168,7 @@ int main() {
     floydWarshall(dist, next, n);
 
     // 读取要求
-    ifstream visitorFile("C:/Users/20148/Desktop/Investigator/Tests/visitor.txt");
+    ifstream visitorFile("Tests/visitor.txt");
     if (!visitorFile.is_open()) {
         cerr << "Failed to open file \"visitor.txt\"" << endl;
         return 1;
